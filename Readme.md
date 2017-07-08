@@ -78,3 +78,18 @@ Run the script a few more times, possibly in a loop. You'll have time series dat
 ![Dota 2 viewers over time](dota2_viewers.png)
 
 
+
+Use embeded graphs
+------------------
+
+
+M2X can publish graphs as svg or png resources, that can then be embeded into web pages.
+
+Configure the graph.
+
+![M2X chart configuration](m2x-embedded-chart-config.png)
+
+Example of embeded graph. See example.html in this repository
+
+
+![M2X chart use](m2x-embedded_chart.png)
