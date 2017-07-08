@@ -62,5 +62,5 @@ for game in games:
     for stat in ['popularity', 'viewers', 'channels', 'viewer_channel_ratio']:
         stream = create_or_return_stream(device, stat)
         stream.add_value(game[stat], collection_time)
-        time.sleep(1)
+        time.sleep(.1)
 
