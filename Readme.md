@@ -17,7 +17,7 @@ Find the service in the catalog
 
 ![Find the service in the catalog](provision_m2x.png)
 
-Provision the instance
+Provision the instance. Note that we'll want at least the 50 device plan. If you want to use the 10 device plan, you can change the scripts to only track the top 10 games.
 
 ![Provision the instance](provision_m2x_2.png)
 
@@ -30,12 +30,51 @@ Get a twitch token
 
 TODO: Add docs on twitch token
 
-Create a configuation file. Add both the twitch token and the master key to the config file.
+Create a configuration file. Add both the twitch token and the master key to the config file.
 
 ```bash
 
 cp example_config.py config.py
 vim config.py
 ```
+
+
+Install requirements
+
+```bash
+virtualenv --python=python3 venv 
+source venv/bin/activate
+pip install -r requirements.txt`
+```
+
+
+
+Run the script locally
+----------------------
+
+Start by running the script
+
+
+```bash
+python track_twitch_popularity.py
+```
+
+Note this takes a while because of some naive sleeps to avoid api rate limits.
+
+
+Graphs!
+-------
+
+
+There are now data sets in your m2x dashboard as devices
+
+
+![Games showing up in the device list](games_in_m2x_2.png)
+
+
+Run the script a few more times, possibly in a loop. You'll have time series data. This is Dota 2 viewership over a small time interval.
+
+
+![Dota 2 viewers over time](dota2_viewers.png)
 
 
