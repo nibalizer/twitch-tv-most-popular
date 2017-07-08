@@ -26,4 +26,16 @@ Locate your m2x master key at [the account settings page](https://m2x.att.com/ac
 ![Locate your m2x master key](m2x_master_key.png)
 
 
+Get a twitch token
+
+TODO: Add docs on twitch token
+
+Create a configuation file. Add both the twitch token and the master key to the config file.
+
+```bash
+
+cp example_config.py config.py
+vim config.py
+```
+
 
