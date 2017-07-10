@@ -30,7 +30,7 @@ Get a twitch token
 
 TODO: Add docs on twitch token
 
-Create a configuration file. Add both the twitch token and the master key to the config file.
+Create a configuration file. Add both the twitch token and the master key to the config file. Delay can be decreased. Set max_devices to the number of devices you selected in your m2x plan.
 
 ```bash
 
