@@ -91,6 +91,7 @@ for game in games:
     device = get_device(client, name)
     if device is None and at_max_devices == False:
         device = create_device(client, name)
+    if device is not None:
         for stat in ['popularity', 'viewers', 'channels', 'viewer_channel_ratio']:
             stream = create_or_return_stream(device, stat)
             stream.add_value(game[stat], collection_time)
