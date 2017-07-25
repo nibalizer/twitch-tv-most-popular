@@ -1,3 +1,13 @@
+Twitch Viewers during the CSGO Major
+====================================
+
+
+![dat major](csgo_major_viewers.png)
+
+
+Viewers over time for csgo during the major. The peak value is 779k concurent viewers. (This is all csgo channels, not just the major).
+
+
 Track Twitch Popularity
 =======================
 
